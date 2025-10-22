@@ -15,6 +15,25 @@ Online Demo: https://fluttercommunity.github.io/app_review/
 ## Description
 Flutter Plugin for Requesting and Writing Reviews in Google Play and the App Store. Apps have to be published for the app to be found correctly.
 
+## Requirements
+
+- **Flutter 2.0 or later**
+- For Flutter 1.x projects, use `app_review: 2.1.2`
+
+## Installation
+
+Add to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  app_review: ^2.1.3
+```
+
+Then run:
+```bash
+flutter pub get
+```
+
 ## How To Use
 It's important to note that the App ID must match the App ID in Google Play and iTunes Connect. This can be changed in the Info.plist on iOS and app/build.gradle on Android. You will use this App ID for other services like Firebase, Admob and publishing the app. 
 
