@@ -8,8 +8,8 @@ import androidx.annotation.Nullable;
 import com.google.android.play.core.review.ReviewInfo;
 import com.google.android.play.core.review.ReviewManager;
 import com.google.android.play.core.review.ReviewManagerFactory;
-import com.google.android.play.core.tasks.OnCompleteListener;
-import com.google.android.play.core.tasks.Task;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 
 import java.lang.ref.WeakReference;
 
@@ -21,7 +21,6 @@ import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 /** AppReviewPlugin */
 public class AppReviewPlugin implements FlutterPlugin, MethodCallHandler, ActivityAware {
@@ -35,13 +34,6 @@ public class AppReviewPlugin implements FlutterPlugin, MethodCallHandler, Activi
   private ReviewInfo reviewInfo;
 
   public AppReviewPlugin() {
-  }
-
-  /** Plugin registration. */
-  public static void registerWith(Registrar registrar) {
-    AppReviewPlugin simplePermissionsPlugin = new AppReviewPlugin();
-    simplePermissionsPlugin.setupChannel(registrar.messenger());
-    //    registrar.addRequestPermissionsResultListener(simplePermissionsPlugin);
   }
 
   @Override

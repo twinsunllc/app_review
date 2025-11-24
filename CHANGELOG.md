@@ -1,3 +1,14 @@
+## 2.1.3 - 2025-10-22
+
+### Breaking Changes
+* Migrated to Flutter v2 embedding API for Android
+* **Removed Flutter 1.x support** - apps using Flutter 1.x must stay on version 2.1.2
+
+### Improvements
+* Full compatibility with Flutter 3.x and later
+* Cleaner plugin architecture using modern Flutter APIs
+* No changes to Dart API - same public interface
+
 ## 2.1.2
 
 * Upgrading dependencies
